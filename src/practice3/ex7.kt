@@ -1,12 +1,16 @@
-package practice3
+package src.practice3
 
-fun fib(num: Int): Int {
-    if (num <= 1) {
-        return num
-    }
-    return fib(num - 1) + fib(num - 2)
-}
+import kotlin.random.Random
 
-fun main() {
-    println(fib(readln().toInt()))
+fun main()
+{
+    val a = Random.nextFloat() * 100
+    val b = Random.nextFloat() * 100
+
+    println("a = $a, b = $b")
+    println(when {
+        a > b -> "a > b"
+        a < b -> "a < b"
+        else -> "a == b"
+    })
 }
