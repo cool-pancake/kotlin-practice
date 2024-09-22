@@ -1,7 +1,7 @@
 package src.practice4
 
 fun main() {
-    val a = readln()
+    val a = readlnOrNull() ?: "abc"
 
     println("Длина строки: ${a.length}")
 }

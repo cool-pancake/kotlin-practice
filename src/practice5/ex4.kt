@@ -2,9 +2,9 @@ package src.practice5
 
 fun main() {
     print("Число: ")
-    val n = readln().toInt()
+    val n = readlnOrNull()?.toIntOrNull() ?: 5
 
-    var fact: Int = 1
+    var fact = 1
     for (i in 1..n) {
         fact *= i
     }

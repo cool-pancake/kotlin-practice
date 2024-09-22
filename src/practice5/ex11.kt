@@ -1,10 +1,8 @@
 package src.practice5
 
-import kotlin.math.pow
-
 fun main() {
-    val a = readln()
-    val b = readln()
+    val a = readlnOrNull() ?: "abc"
+    val b = readlnOrNull() ?: "cba"
 
     var sum = 0
     for (i in a) {

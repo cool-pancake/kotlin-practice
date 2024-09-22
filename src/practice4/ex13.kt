@@ -2,7 +2,7 @@ package src.practice4
 
 fun main() {
     print("Код: ")
-    val a = readln().toInt()
+    val a = readlnOrNull()?.toIntOrNull() ?: 200
 
     println(when {
         a == 200 -> "OK"

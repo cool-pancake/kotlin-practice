@@ -1,7 +1,7 @@
 package src.practice5
 
 fun main() {
-    val a = readln()
+    val a = readlnOrNull() ?: "abc"
 
     println(a.reversed())
 }

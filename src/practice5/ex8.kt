@@ -1,14 +1,14 @@
 package src.practice5
 
 fun main() {
-    var a = readln().toInt()
-    var b = readln().toInt()
+    var a = readlnOrNull()?.toIntOrNull() ?: 4
+    var b = readlnOrNull()?.toIntOrNull() ?: 2
 
     while (a != 0 && b != 0) {
         if (a > b) {
-            a = a % b
+            a %= b
         } else {
-            b = b % a
+            b %= a
         }
     }
     println(a + b)

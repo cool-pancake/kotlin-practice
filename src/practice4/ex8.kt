@@ -2,7 +2,7 @@ package src.practice4
 
 fun main() {
     print("Блюдо: ")
-    var a = readln().lowercase()
+    val a = readlnOrNull()?.lowercase() ?: "доширак"
 
     println(when {
         a == "макароны" || a == "пельмени" -> "10 минут"

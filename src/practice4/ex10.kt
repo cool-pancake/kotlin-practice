@@ -3,7 +3,7 @@ package src.practice4
 fun main() {
     print("Способ оплаты: ")
 
-    val a = readln().lowercase()
+    val a = readlnOrNull()?.lowercase() ?: "paypal"
 
     println(when {
         a == "paypal" -> "Вы выбрали PayPal"

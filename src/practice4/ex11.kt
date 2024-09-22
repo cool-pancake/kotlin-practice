@@ -3,7 +3,7 @@ package src.practice4
 fun main() {
     println("Группа крови: ")
 
-    val a = readln().lowercase()
+    val a = readlnOrNull()?.lowercase() ?: "a"
 
     println(when {
         a == "a" -> "Вам доступны перелив крови с группой A и AB"

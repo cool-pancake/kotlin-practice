@@ -7,7 +7,7 @@ fun main() {
 
     print("Угадайте число от 0 до 1000000 и получите приз(наверное): ")
 
-    val b = readln().toInt()
+    val b = readlnOrNull()?.toIntOrNull() ?: -1
 
     println(when {
         a == b -> "Вы угадали, приза не будет."

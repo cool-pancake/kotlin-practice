@@ -2,13 +2,12 @@ package src.practice5
 
 fun main() {
     print("Число: ")
-    val n = readln().toInt()
+    val n = readlnOrNull()?.toIntOrNull() ?: 5
 
     var first = 0
     var second = 1
 
     var temp: Int
-    var fib: Int = 0
 
     for (i in 2..n) {
         temp = first
