@@ -1,4 +1,4 @@
-package practice2.numbers
+package src.practice2.numbers
 
 import kotlin.math.sqrt
 

@@ -1,7 +1,16 @@
-package practice3
+package src.practice3
 
-fun main() {
-    val a = readln()
+import kotlin.random.Random
 
-    println(a.reversed())
+fun main()
+{
+    val n: Int = Random.nextInt(0, 1000)
+    val m: Int = Random.nextInt(0, 1000)
+
+    println("m = $m, n = $n")
+
+    println(when {
+        m % n == 0 -> "${m / n}"
+        else -> "m на n нацело не делится"
+    })
 }

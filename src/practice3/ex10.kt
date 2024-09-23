@@ -1,11 +1,16 @@
-package practice3
+package src.practice3
 
-fun main() {
-    val a = readln().toInt()
-    val b = readln().toInt()
+import kotlin.random.Random
+
+fun main()
+{
+    val a = Random.nextInt(0, 100)
+    val b = Random.nextInt(0, 100)
+
+    println("a = $a, b = $b")
 
     println(when {
-        a % b == 0 -> "Число b является делителем"
-        else -> "Число b не является делителем"
+        b % a == 0 -> "a является делителем"
+        else -> "a не является делителем"
     })
 }
