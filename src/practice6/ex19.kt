@@ -5,9 +5,10 @@ import kotlin.random.Random
 fun main() {
     val rand = Random
     val lst = List(4) { rand.nextInt(1, 20) }
+    val lst1 = List(4) { rand.nextInt(1, 20) }
 
     println(lst)
-    println("Sum = ${lst.sum()}")
+    println(lst1)
 
-    println("Mul = ${lst.reduce {acc, i -> acc * i}}")
+    println((lst + lst1).sorted())
 }
